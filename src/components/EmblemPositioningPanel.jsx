@@ -133,7 +133,7 @@ mixBlendMode: ${headerConfig.blendMode}`;
             />
             <Slider
               label="Width" value={heroConfig.width}
-              min={10} max={200} unit="%" color="#11A8FF"
+              min={10} max={400} unit="%" color="#11A8FF"
               onChange={v => updateHero('width', v)}
             />
             <Slider
