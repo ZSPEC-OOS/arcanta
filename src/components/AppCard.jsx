@@ -1,6 +1,6 @@
 import ImageWithFallback from './ImageWithFallback';
 
-function AppCard({ name, subtitle, description, image, highlight }) {
+function AppCard({ name, subtitle, description, image, highlight, hideImageOnMobile }) {
   return (
     <article
       className={`glass-card overflow-hidden p-5 ${
@@ -11,7 +11,9 @@ function AppCard({ name, subtitle, description, image, highlight }) {
         src={image}
         alt={`${name} preview`}
         fallbackLabel={`${name} Image`}
-        className="mb-5 h-52 w-full rounded-2xl border border-white/10 object-cover"
+        className={`mb-5 h-40 w-full rounded-2xl border border-white/10 object-cover sm:h-52 ${
+          hideImageOnMobile ? 'hidden sm:block' : ''
+        }`}
       />
       <h3 className="text-xl font-semibold text-white">{name}</h3>
       <p className="mt-1 text-sm font-medium text-arcanta-blue">{subtitle}</p>

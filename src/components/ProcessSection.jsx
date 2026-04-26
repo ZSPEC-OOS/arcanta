@@ -19,6 +19,7 @@ const processCards = [
     description: 'We build secure, scalable applications using modern AI infrastructure.',
     icon: '/assets/iphone-frame-transparent-screen.png',
     iconLabel: 'Develop icon placeholder',
+    hideIconOnMobile: true,
   },
   {
     step: '04',
@@ -26,6 +27,7 @@ const processCards = [
     description: 'We launch, monitor, optimize, and support your product after release.',
     icon: '/assets/iphone-frame-transparent-screen.png',
     iconLabel: 'Deploy icon placeholder',
+    hideIconOnMobile: true,
   },
 ];
 
