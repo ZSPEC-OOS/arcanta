@@ -1,8 +1,6 @@
 import ImageWithFallback from './ImageWithFallback';
-import { useEmblemPositioning } from './EmblemPositioningContext';
 
 function Header() {
-  const { headerConfig } = useEmblemPositioning();
   const navItems = ['Home', 'About', 'Apps', 'Process', 'Careers', 'Contact'];
 
   return (
@@ -15,9 +13,8 @@ function Header() {
             fallbackLabel="ARCANTA"
             className="w-auto max-w-[220px] object-contain"
             style={{
-              height: `${headerConfig.height}px`,
-              transform: `translate(${headerConfig.translateX}px, ${headerConfig.translateY}px)`,
-              mixBlendMode: headerConfig.blendMode,
+              height: '34px',
+              mixBlendMode: 'screen',
             }}
           />
         </a>
