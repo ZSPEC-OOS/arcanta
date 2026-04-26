@@ -5,7 +5,7 @@ function Hero() {
   const { heroConfig } = useEmblemPositioning();
 
   return (
-    <section id="home" className="section-shell relative z-10 pb-14 pt-10 md:pb-20 md:pt-16">
+    <section id="home" className="section-shell relative z-10 overflow-visible pb-14 pt-10 md:pb-20 md:pt-16">
       <div className="grid items-center gap-12 lg:grid-cols-[1fr_0.9fr]">
         <div>
           <p className="eyebrow">AI APP DEVELOPMENT</p>
@@ -39,17 +39,15 @@ function Hero() {
           </div>
         </div>
 
-        <div
-          className="relative mx-auto"
-          style={{ width: `${heroConfig.width}%`, maxWidth: '100%' }}
-        >
+        <div className="relative mx-auto w-full overflow-visible">
           <ImageWithFallback
             src="/assets/arcanta-hero-emblem-primary.png"
             alt="Arcanta hero emblem"
             fallbackLabel="Arcanta Hero Emblem"
             className="relative z-10 mx-auto h-auto w-full object-contain"
             style={{
-              transform: `translate(${heroConfig.translateX}px, ${heroConfig.translateY}px)`,
+              transform: `translate(${heroConfig.translateX}px, ${heroConfig.translateY}px) scale(${heroConfig.scale})`,
+              transformOrigin: 'center center',
               opacity: heroConfig.opacity / 100,
             }}
           />

@@ -56,7 +56,7 @@ export function EmblemPositioningPanel() {
   const configCode = `// Hero Emblem (arcanta-hero-emblem-primary.png)
 translateX: ${heroConfig.translateX}px
 translateY: ${heroConfig.translateY}px
-width: ${heroConfig.width}%
+scale: ${heroConfig.scale}
 opacity: ${heroConfig.opacity}%
 
 // Header Emblem (arcanta-emblem-horizontal.png)
@@ -72,7 +72,7 @@ mixBlendMode: ${headerConfig.blendMode}`;
   };
 
   const handleReset = () => {
-    setHeroConfig({ translateX: 0, translateY: 0, width: 100, opacity: 100 });
+    setHeroConfig({ translateX: 0, translateY: 0, scale: 1, opacity: 100 });
     setHeaderConfig({ translateX: 0, translateY: 0, height: 32, blendMode: 'normal' });
   };
 
@@ -132,9 +132,9 @@ mixBlendMode: ${headerConfig.blendMode}`;
               onChange={v => updateHero('translateY', v)}
             />
             <Slider
-              label="Width" value={heroConfig.width}
-              min={10} max={400} unit="%" color="#11A8FF"
-              onChange={v => updateHero('width', v)}
+              label="Scale" value={heroConfig.scale}
+              min={0.1} max={6} step={0.05} unit="×" color="#11A8FF"
+              onChange={v => updateHero('scale', v)}
             />
             <Slider
               label="Opacity" value={heroConfig.opacity}
