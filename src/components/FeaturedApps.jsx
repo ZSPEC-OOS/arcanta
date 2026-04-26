@@ -22,6 +22,7 @@ const appCards = [
     description:
       'A focused product currently in design. More details will be released as we approach launch.',
     image: '/assets/iphone-frame-transparent-screen.png',
+    hideImageOnMobile: true,
   },
   {
     name: 'App Four',
@@ -29,6 +30,7 @@ const appCards = [
     description:
       'Another practical AI app in development aimed at solving measurable, day-to-day business pain.',
     image: '/assets/iphone-frame-transparent-screen.png',
+    hideImageOnMobile: true,
   },
 ];
 

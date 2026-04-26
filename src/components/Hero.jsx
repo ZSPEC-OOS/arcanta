@@ -41,11 +41,7 @@ function Hero() {
             src="/assets/arcanta-hero-emblem-primary.png"
             alt="Arcanta hero emblem"
             fallbackLabel="Arcanta Hero Emblem"
-            className="relative z-10 mx-auto h-auto w-full object-contain"
-            style={{
-              transform: 'translate(-81px, 77px) scale(2.35)',
-              transformOrigin: 'center center',
-            }}
+            className="relative z-10 mx-auto h-auto w-[72%] max-w-[280px] object-contain translate-y-8 scale-125 md:w-full md:max-w-none md:-translate-x-[81px] md:translate-y-[77px] md:scale-[2.35]"
           />
         </div>
       </div>

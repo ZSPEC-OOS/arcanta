@@ -1,6 +1,6 @@
 import ImageWithFallback from './ImageWithFallback';
 
-function ProcessCard({ step, title, description, icon, iconLabel }) {
+function ProcessCard({ step, title, description, icon, iconLabel, hideIconOnMobile }) {
   return (
     <article className="glass-card p-5">
       <div className="mb-5 inline-flex h-10 min-w-10 items-center justify-center rounded-full border border-arcanta-gold/40 px-3 text-lg font-semibold text-arcanta-gold">
@@ -11,7 +11,7 @@ function ProcessCard({ step, title, description, icon, iconLabel }) {
           src={icon}
           alt={`${title} icon`}
           fallbackLabel={iconLabel || `${title} Icon`}
-          className="mb-4 h-12 w-12 object-contain"
+          className={`mb-4 h-12 w-12 object-contain ${hideIconOnMobile ? 'hidden sm:block' : ''}`}
         />
       ) : null}
       <h3 className="text-xl font-semibold text-white">{title}</h3>
