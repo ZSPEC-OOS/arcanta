@@ -5,7 +5,7 @@ const appCards = [
     name: 'WolfKrow',
     subtitle: 'AI Workflow Builder',
     description:
-      'Orchestrate tasks, agents, and decision flows with practical automation teams can actually use.',
+      'Platform for automating large-scale AI prompt workflows, featuring caching, variable-based parameterization, multi-run execution, image/file attachments, and automated storage of generated text outputs.',
     image: '/assets/WFlogo.PNG',
     imageLink: 'https://wolfkrow.onrender.com',
     highlight: true,
