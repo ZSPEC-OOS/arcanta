@@ -53,7 +53,7 @@ export function EmblemPositioningPanel() {
   const updateHero = (key, value) => setHeroConfig(prev => ({ ...prev, [key]: value }));
   const updateHeader = (key, value) => setHeaderConfig(prev => ({ ...prev, [key]: value }));
 
-  const configCode = `// Hero Emblem (arcanta-emblem-compact.png)
+  const configCode = `// Hero Emblem (arcanta-hero-emblem-primary.png)
 translateX: ${heroConfig.translateX}px
 translateY: ${heroConfig.translateY}px
 width: ${heroConfig.width}%
@@ -120,7 +120,7 @@ mixBlendMode: ${headerConfig.blendMode}`;
 
       {!collapsed && (
         <div style={{ padding: '14px 16px' }}>
-          <Section label="Hero Emblem — Compact" color="#11A8FF">
+          <Section label="Hero Emblem — Primary" color="#11A8FF">
             <Slider
               label="Translate X" value={heroConfig.translateX}
               min={-400} max={400} unit="px" color="#11A8FF"
