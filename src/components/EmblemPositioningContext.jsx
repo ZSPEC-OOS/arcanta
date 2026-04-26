@@ -5,7 +5,7 @@ const EmblemPositioningContext = createContext(null);
 export const defaultHeroConfig = {
   translateX: 0,
   translateY: 0,
-  width: 100,
+  scale: 1,
   opacity: 100,
 };
 
