@@ -6,7 +6,8 @@ const appCards = [
     subtitle: 'AI Workflow Builder',
     description:
       'Orchestrate tasks, agents, and decision flows with practical automation teams can actually use.',
-    image: '/assets/app-wolfkrow-dashboard.png',
+    image: '/assets/WFlogo.PNG',
+    imageLink: 'https://wolfkrow.onrender.com',
     highlight: true,
   },
   {
@@ -14,7 +15,8 @@ const appCards = [
     subtitle: 'AI Code Assistant',
     description:
       'Ship clean code faster with context-aware suggestions, review workflows, and tooling integrations.',
-    image: '/assets/app-bluswan-interface.png',
+    image: '/assets/BSlogo.PNG',
+    imageLink: 'https://bluswan.vercel.app',
   },
   {
     name: 'App Three',
