@@ -19,20 +19,28 @@ const appCards = [
     imageLink: 'https://bluswan.vercel.app',
   },
   {
-    name: 'App Three',
-    subtitle: 'Coming Soon',
+    name: 'Wisp',
+    subtitle: 'Open-Web Research API',
     description:
-      'A focused product currently in design. More details will be released as we approach launch.',
-    image: '/assets/iphone-frame-transparent-screen.png',
-    hideImageOnMobile: true,
+      'Research the open web with one API. Search, extract, crawl, and synthesize any corner of the internet. No vendor lock-in, no black boxes.',
+    image: '/assets/WISPlogo.PNG',
+    imageLink: 'https://wisp-rouge.vercel.app',
   },
   {
-    name: 'App Four',
-    subtitle: 'Coming Soon',
+    name: 'CopyAI',
+    subtitle: 'Prompt Management Module',
     description:
-      'Another practical AI app in development aimed at solving measurable, day-to-day business pain.',
-    image: '/assets/iphone-frame-transparent-screen.png',
-    hideImageOnMobile: true,
+      'Prompt management module enabling instantaneous copying and reuse of large, structured context prompts to optimize high-throughput AI content workflows.',
+    image: '/assets/Cailogo.jpg',
+    imageLink: 'https://www.copyai.space',
+  },
+  {
+    name: 'Corpus',
+    subtitle: 'PDF-to-JSONL Trainer',
+    description:
+      'Combine PDFs into a high-quality training JSONL. Optionally attach an existing dataset — new content is deduplicated against it automatically.',
+    image: '/assets/CORPlogo.jpg',
+    imageLink: 'https://corpus-peach.vercel.app',
   },
 ];
 
