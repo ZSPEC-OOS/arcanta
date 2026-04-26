@@ -27,6 +27,14 @@ const appCards = [
     imageLink: 'https://wisp-rouge.vercel.app',
   },
   {
+    name: 'MCAT Mastery',
+    subtitle: 'AI-Powered MCAT Prep Platform',
+    description:
+      'High-quality AI-powered MCAT prep platform with real-time progress tracking, personalized practice sessions targeting weak areas, and full-length exam simulations. Designed for efficient, data-driven improvement and accurate performance prediction.',
+    image: '/assets/Mcatlogo.PNG',
+    imageLink: 'https://mcatmastery.vercel.app',
+  },
+  {
     name: 'CopyAI',
     subtitle: 'Prompt Management Module',
     description:
