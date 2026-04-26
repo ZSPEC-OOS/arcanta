@@ -45,7 +45,7 @@ function Hero() {
         >
           <div className="absolute inset-x-8 bottom-4 h-12 rounded-full bg-gradient-to-r from-arcanta-blue/50 via-white/45 to-arcanta-gold/55 blur-2xl" />
           <ImageWithFallback
-            src="/assets/arcanta-emblem-compact.png"
+            src="/assets/arcanta-hero-emblem-primary.png"
             alt="Arcanta hero emblem"
             fallbackLabel="Arcanta Hero Emblem"
             className="relative z-10 mx-auto h-auto max-h-[620px] w-full object-contain"
