@@ -1,9 +1,6 @@
 import ImageWithFallback from './ImageWithFallback';
-import { useEmblemPositioning } from './EmblemPositioningContext';
 
 function Hero() {
-  const { heroConfig } = useEmblemPositioning();
-
   return (
     <section id="home" className="section-shell relative z-10 overflow-visible pb-14 pt-10 md:pb-20 md:pt-16">
       <div className="grid items-center gap-12 lg:grid-cols-[1fr_0.9fr]">
@@ -46,9 +43,8 @@ function Hero() {
             fallbackLabel="Arcanta Hero Emblem"
             className="relative z-10 mx-auto h-auto w-full object-contain"
             style={{
-              transform: `translate(${heroConfig.translateX}px, ${heroConfig.translateY}px) scale(${heroConfig.scale})`,
+              transform: 'translate(-81px, 77px) scale(2.35)',
               transformOrigin: 'center center',
-              opacity: heroConfig.opacity / 100,
             }}
           />
         </div>
