@@ -8,7 +8,7 @@ const appCards = [
       'Platform for automating large-scale AI prompt workflows, featuring caching, variable-based parameterization, multi-run execution, image/file attachments, and automated storage of generated text outputs.',
     image: '/assets/WFlogo.PNG',
     imageLink: 'https://wolfkrow.onrender.com',
-    highlight: true,
+    accentColor: 'rgba(220, 38, 38, 0.55)',
   },
   {
     name: 'BluSwan',
@@ -17,6 +17,7 @@ const appCards = [
       'Ship clean code faster with context-aware suggestions, review workflows, and tooling integrations.',
     image: '/assets/BSlogo.PNG',
     imageLink: 'https://bluswan.vercel.app',
+    accentColor: 'rgba(59, 130, 246, 0.55)',
   },
   {
     name: 'Wisp',
@@ -25,6 +26,7 @@ const appCards = [
       'Research the open web with one API. Search, extract, crawl, and synthesize any corner of the internet. No vendor lock-in, no black boxes.',
     image: '/assets/WISPlogo.PNG',
     imageLink: 'https://wisp-rouge.vercel.app',
+    accentColor: 'rgba(139, 92, 246, 0.55)',
   },
   {
     name: 'MCAT Mastery',
@@ -33,6 +35,7 @@ const appCards = [
       'High-quality AI-powered MCAT prep platform with real-time progress tracking, personalized practice sessions targeting weak areas, and full-length exam simulations.',
     image: '/assets/Mcatlogo.PNG',
     imageLink: 'https://mcatmastery.vercel.app',
+    accentColor: 'rgba(148, 163, 184, 0.55)',
   },
   {
     name: 'CopyAI',
@@ -41,6 +44,7 @@ const appCards = [
       'Prompt management module enabling instantaneous copying and reuse of large, structured context prompts to optimize high-throughput AI content workflows.',
     image: '/assets/Cailogo.jpg',
     imageLink: 'https://www.copyai.space',
+    accentColor: 'rgba(124, 58, 237, 0.55)',
   },
   {
     name: 'Corpus',
@@ -49,6 +53,7 @@ const appCards = [
       'Combine PDFs into a high-quality training JSONL. Optionally attach an existing dataset — new content is deduplicated against it automatically.',
     image: '/assets/CORPlogo.jpg',
     imageLink: 'https://corpus-peach.vercel.app',
+    accentColor: 'rgba(6, 182, 212, 0.55)',
   },
 ];
 
