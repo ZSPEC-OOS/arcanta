@@ -5,13 +5,11 @@ const processCards = [
     step: '01',
     title: 'Discover',
     description: 'We define the problem, users, requirements, and success criteria.',
-    icon: '/assets/icon-discover.png',
   },
   {
     step: '02',
     title: 'Design',
     description: 'We design clean workflows, interfaces, and product logic before build.',
-    icon: '/assets/icon-design.png',
   },
   {
     step: '03',
