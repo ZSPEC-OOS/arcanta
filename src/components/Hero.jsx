@@ -14,7 +14,7 @@ function Hero() {
           </h1>
         </div>
 
-        <p className="mt-5 max-w-xl text-base leading-relaxed text-white/72 sm:mt-6 sm:text-lg">
+        <p className="mt-5 max-w-xl text-center text-base leading-relaxed text-white/72 sm:mt-6 sm:text-lg">
           Arcanta is an AI app development company crafting intelligent, intuitive,
           and impactful applications for the future.
         </p>
