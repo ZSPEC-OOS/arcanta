@@ -22,7 +22,10 @@ function Hero() {
         </p>
 
         <div className="mt-7 flex justify-center sm:mt-8 sm:block sm:gap-4">
-          <button className="rounded-full border border-arcanta-gold px-6 py-3 text-sm font-semibold text-arcanta-gold transition hover:bg-arcanta-gold/10 active:scale-95">
+          <button
+            className="rounded-full border border-arcanta-gold px-6 py-3 text-sm font-semibold text-arcanta-gold transition hover:bg-arcanta-gold/10 active:scale-95"
+            onClick={() => document.getElementById('apps')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             Explore Our Apps
           </button>
           <button className="hidden rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white/85 transition hover:bg-white/10 active:scale-95 sm:inline-block">
