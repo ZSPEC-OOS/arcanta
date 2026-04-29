@@ -13,11 +13,11 @@ function App() {
       <main>
         <Hero />
         <TrustStrip />
-        <section id="apps">
-          <FeaturedApps />
-        </section>
         <section id="process">
           <ProcessSection />
+        </section>
+        <section id="apps">
+          <FeaturedApps />
         </section>
       </main>
       <section id="about" className="hidden" aria-hidden="true" />
