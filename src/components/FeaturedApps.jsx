@@ -74,7 +74,7 @@ function FeaturedApps() {
             Explore our suite of AI-powered applications built to enhance productivity,
             creativity, wellness, and more.
           </p>
-          <button className="mt-6 rounded-full border border-arcanta-gold px-6 py-3 text-sm font-semibold text-arcanta-gold transition hover:bg-arcanta-gold/10 active:scale-95 sm:mt-8">
+          <button className="hidden rounded-full border border-arcanta-gold px-6 py-3 text-sm font-semibold text-arcanta-gold transition hover:bg-arcanta-gold/10 active:scale-95 sm:mt-8 sm:inline-block">
             View All Apps
           </button>
         </div>
