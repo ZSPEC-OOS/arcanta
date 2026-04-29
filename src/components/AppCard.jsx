@@ -1,6 +1,6 @@
 import ImageWithFallback from './ImageWithFallback';
 
-function AppCard({ name, subtitle, description, image, imageLink, highlight }) {
+function AppCard({ name, subtitle, description, image, imageLink, accentColor }) {
   const imgClass = 'aspect-square w-full rounded-xl border border-white/10 object-cover';
 
   const MobileImage = (
@@ -35,9 +35,8 @@ function AppCard({ name, subtitle, description, image, imageLink, highlight }) {
 
   return (
     <article
-      className={`glass-card w-full overflow-hidden p-4 sm:p-5 ${
-        highlight ? 'ring-1 ring-arcanta-gold/40' : ''
-      }`}
+      className="glass-card w-full overflow-hidden p-4 sm:p-5"
+      style={accentColor ? { boxShadow: `0 0 0 1px ${accentColor}` } : undefined}
     >
       {/* Mobile: horizontal row */}
       <div className="flex items-center gap-3.5 sm:hidden">
