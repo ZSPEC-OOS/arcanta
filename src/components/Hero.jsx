@@ -3,10 +3,10 @@ import ImageWithFallback from './ImageWithFallback';
 import DevEmblemToolbar from './DevEmblemToolbar';
 
 const defaultEmblem = {
-  width: 100,
-  opacity: 85,
-  translateX: 0,
-  translateY: 0,
+  width: 121,
+  opacity: 91,
+  translateX: -120,
+  translateY: -44,
   alignSelf: 'flex-start',
 };
 
