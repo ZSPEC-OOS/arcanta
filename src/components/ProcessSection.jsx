@@ -5,13 +5,11 @@ const processCards = [
     step: '01',
     title: 'Discover',
     description: 'We define the problem, users, requirements, and success criteria.',
-    icon: '/assets/icon-discover.png',
   },
   {
     step: '02',
     title: 'Design',
     description: 'We design clean workflows, interfaces, and product logic before build.',
-    icon: '/assets/icon-design.png',
   },
   {
     step: '03',
@@ -37,7 +35,7 @@ function ProcessSection() {
       <div className="grid gap-8 lg:grid-cols-[0.95fr_1.65fr] lg:gap-10">
 
         {/* Section header */}
-        <div className="max-w-md">
+        <div className="max-w-md text-center lg:text-left">
           <p className="eyebrow">OUR APPROACH</p>
           <h2 className="mt-3 text-3xl font-semibold leading-tight text-white sm:mt-4 sm:text-4xl">
             Human insight.
@@ -50,9 +48,11 @@ function ProcessSection() {
             We combine human-centered design with practical AI engineering to build apps
             that are useful, scalable, and measurable.
           </p>
-          <button className="mt-6 rounded-full border border-arcanta-gold px-6 py-3 text-sm font-semibold text-arcanta-gold transition hover:bg-arcanta-gold/10 active:scale-95 sm:mt-8">
-            Our Process
-          </button>
+          <div className="flex justify-center lg:justify-start">
+            <button className="mt-6 rounded-full border border-arcanta-gold px-6 py-3 text-sm font-semibold text-arcanta-gold transition hover:bg-arcanta-gold/10 active:scale-95 sm:mt-8">
+              Our Process
+            </button>
+          </div>
         </div>
 
         {/* Process cards — 2-col grid on all sizes (compact on mobile) */}
