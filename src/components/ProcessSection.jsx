@@ -18,7 +18,7 @@ const processCards = [
     title: 'Develop',
     description: 'We build secure, scalable applications using modern AI infrastructure.',
     icon: '/assets/iphone-frame-transparent-screen.png',
-    iconLabel: 'Develop icon placeholder',
+    iconLabel: 'Develop icon',
     hideIconOnMobile: true,
   },
   {
@@ -26,33 +26,37 @@ const processCards = [
     title: 'Deploy',
     description: 'We launch, monitor, optimize, and support your product after release.',
     icon: '/assets/iphone-frame-transparent-screen.png',
-    iconLabel: 'Deploy icon placeholder',
+    iconLabel: 'Deploy icon',
     hideIconOnMobile: true,
   },
 ];
 
 function ProcessSection() {
   return (
-    <section className="section-shell pb-20 md:pb-24">
-      <div className="grid gap-10 lg:grid-cols-[0.95fr_1.65fr]">
+    <section className="section-shell pb-16 md:pb-24">
+      <div className="grid gap-8 lg:grid-cols-[0.95fr_1.65fr] lg:gap-10">
+
+        {/* Section header */}
         <div className="max-w-md">
           <p className="eyebrow">OUR APPROACH</p>
-          <h2 className="mt-4 text-4xl font-semibold leading-tight text-white">
+          <h2 className="mt-3 text-3xl font-semibold leading-tight text-white sm:mt-4 sm:text-4xl">
             Human insight.
             <br />
             AI intelligence.
             <br />
             Real impact.
           </h2>
-          <p className="mt-5 text-base leading-7 text-white/75">
+          <p className="mt-4 text-sm leading-7 text-white/75 sm:mt-5 sm:text-base">
             We combine human-centered design with practical AI engineering to build apps
             that are useful, scalable, and measurable.
           </p>
-          <button className="mt-8 rounded-full border border-arcanta-gold px-6 py-3 text-sm font-semibold text-arcanta-gold transition hover:bg-arcanta-gold/10">
+          <button className="mt-6 rounded-full border border-arcanta-gold px-6 py-3 text-sm font-semibold text-arcanta-gold transition hover:bg-arcanta-gold/10 active:scale-95 sm:mt-8">
             Our Process
           </button>
         </div>
-        <div className="grid gap-5 sm:grid-cols-2">
+
+        {/* Process cards — 2-col grid on all sizes (compact on mobile) */}
+        <div className="grid grid-cols-2 gap-3 sm:gap-5">
           {processCards.map((step) => (
             <ProcessCard key={step.step} {...step} />
           ))}
