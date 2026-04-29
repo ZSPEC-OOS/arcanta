@@ -30,7 +30,7 @@ const appCards = [
     name: 'MCAT Mastery',
     subtitle: 'AI-Powered MCAT Prep Platform',
     description:
-      'High-quality AI-powered MCAT prep platform with real-time progress tracking, personalized practice sessions targeting weak areas, and full-length exam simulations. Designed for efficient, data-driven improvement and accurate performance prediction.',
+      'High-quality AI-powered MCAT prep platform with real-time progress tracking, personalized practice sessions targeting weak areas, and full-length exam simulations.',
     image: '/assets/Mcatlogo.PNG',
     imageLink: 'https://mcatmastery.vercel.app',
   },
@@ -54,25 +54,28 @@ const appCards = [
 
 function FeaturedApps() {
   return (
-    <section className="section-shell py-16 md:py-24">
-      <div className="grid gap-10 lg:grid-cols-[0.95fr_1.65fr]">
+    <section className="section-shell py-12 md:py-24">
+      <div className="grid gap-8 lg:grid-cols-[0.95fr_1.65fr] lg:gap-10">
+
+        {/* Section header */}
         <div className="max-w-md">
           <p className="eyebrow">FEATURED AI APPS</p>
-          <h2 className="mt-4 text-4xl font-semibold leading-tight text-white">
+          <h2 className="mt-3 text-3xl font-semibold leading-tight text-white sm:mt-4 sm:text-4xl">
             Intelligent apps.
             <br />
             Infinite possibilities.
           </h2>
-          <p className="mt-5 text-base leading-7 text-white/75">
+          <p className="mt-4 text-sm leading-7 text-white/75 sm:mt-5 sm:text-base">
             Explore our suite of AI-powered applications built to enhance productivity,
             creativity, wellness, and more.
           </p>
-          <button className="mt-8 rounded-full border border-arcanta-gold px-6 py-3 text-sm font-semibold text-arcanta-gold transition hover:bg-arcanta-gold/10">
+          <button className="mt-6 rounded-full border border-arcanta-gold px-6 py-3 text-sm font-semibold text-arcanta-gold transition hover:bg-arcanta-gold/10 active:scale-95 sm:mt-8">
             View All Apps
           </button>
         </div>
 
-        <div className="grid gap-5 sm:grid-cols-2">
+        {/* App cards — single column list on mobile, 2-col grid on sm+ */}
+        <div className="flex flex-col gap-3 sm:grid sm:grid-cols-2 sm:gap-5">
           {appCards.map((app) => (
             <AppCard key={app.name} {...app} />
           ))}

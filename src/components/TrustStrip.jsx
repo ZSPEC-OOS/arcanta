@@ -2,14 +2,15 @@ function TrustStrip() {
   const logos = ['Nova', 'Elevate', 'Cortex', 'Pivot', 'Latitude'];
 
   return (
-    <section className="border-y border-white/10 py-8">
+    <section className="border-y border-white/10 py-7 sm:py-8">
       <div className="section-shell">
         <p className="text-center text-xs font-semibold uppercase tracking-[0.2em] text-white/55">
           TRUSTED BY INNOVATORS
         </p>
-        <div className="mt-5 grid grid-cols-2 gap-5 text-center text-xl font-semibold text-white/82 sm:grid-cols-3 md:grid-cols-5">
+        {/* Mobile: centered flex wrap. Desktop: even grid columns */}
+        <div className="mt-5 flex flex-wrap justify-center gap-x-8 gap-y-3 text-center text-lg font-semibold text-white/80 sm:grid sm:grid-cols-5 sm:gap-5 sm:text-xl">
           {logos.map((logo) => (
-            <p key={logo}>{logo}</p>
+            <span key={logo}>{logo}</span>
           ))}
         </div>
       </div>
