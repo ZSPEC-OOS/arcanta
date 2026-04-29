@@ -8,15 +8,29 @@ function Hero() {
         {/* Text content */}
         <div>
           <p className="eyebrow">AI APP DEVELOPMENT</p>
-          <h1 className="mt-4 text-[2.15rem] font-semibold leading-[1.1] text-white sm:mt-5 sm:text-5xl md:text-6xl">
-            We Build AI Apps
-            <br />
-            That Solve Real
-            <br />
-            <span className="bg-gradient-to-r from-arcanta-blue to-arcanta-gold bg-clip-text text-transparent">
-              Problems.
-            </span>
-          </h1>
+
+          {/* Heading row — emblem sits to the right of the heading on iPhone only */}
+          <div className="mt-4 flex items-start gap-4 sm:mt-5">
+            <h1 className="flex-1 text-[2.15rem] font-semibold leading-[1.1] text-white sm:text-5xl md:text-6xl">
+              We Build AI Apps
+              <br />
+              That Solve Real
+              <br />
+              <span className="bg-gradient-to-r from-arcanta-blue to-arcanta-gold bg-clip-text text-transparent">
+                Problems.
+              </span>
+            </h1>
+
+            {/* Mobile-only emblem: right of the heading, hidden sm+ */}
+            <div className="shrink-0 sm:hidden">
+              <ImageWithFallback
+                src="/assets/arcanta-hero-emblem-primary.png"
+                alt="Arcanta hero emblem"
+                fallbackLabel="Arcanta"
+                className="h-auto w-[100px] object-contain opacity-85"
+              />
+            </div>
+          </div>
 
           <p className="mt-5 max-w-xl text-base leading-relaxed text-white/72 sm:mt-6 sm:text-lg">
             Arcanta is an AI app development company crafting intelligent, intuitive,
@@ -48,15 +62,6 @@ function Hero() {
           />
         </div>
 
-        {/* Mobile-only emblem: smaller, centered, no extreme transforms */}
-        <div className="relative mx-auto w-full overflow-hidden lg:hidden">
-          <ImageWithFallback
-            src="/assets/arcanta-hero-emblem-primary.png"
-            alt="Arcanta hero emblem"
-            fallbackLabel="Arcanta Hero Emblem"
-            className="mx-auto h-auto w-[55%] max-w-[220px] object-contain opacity-80"
-          />
-        </div>
       </div>
     </section>
   );
