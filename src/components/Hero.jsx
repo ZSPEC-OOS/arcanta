@@ -2,8 +2,6 @@ function Hero() {
   return (
     <section id="home" className="section-shell relative z-10 overflow-visible pb-10 pt-10 md:pb-20 md:pt-16">
       <div>
-        <p className="eyebrow">AI APP DEVELOPMENT</p>
-
         <div className="mt-4 sm:mt-5">
           <h1 className="text-center text-[2.15rem] font-semibold leading-[1.1] text-white sm:text-5xl md:text-6xl">
             We Build AI Apps
