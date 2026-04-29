@@ -21,11 +21,11 @@ function Hero() {
           and impactful applications for the future.
         </p>
 
-        <div className="mt-7 flex flex-wrap gap-3 sm:mt-8 sm:gap-4">
+        <div className="mt-7 flex justify-center sm:mt-8 sm:block sm:gap-4">
           <button className="rounded-full border border-arcanta-gold px-6 py-3 text-sm font-semibold text-arcanta-gold transition hover:bg-arcanta-gold/10 active:scale-95">
             Explore Our Apps
           </button>
-          <button className="rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white/85 transition hover:bg-white/10 active:scale-95">
+          <button className="hidden rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white/85 transition hover:bg-white/10 active:scale-95 sm:inline-block">
             See Our Process
           </button>
         </div>
