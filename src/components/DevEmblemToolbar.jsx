@@ -95,7 +95,8 @@ function DevEmblemToolbar({ values, onChange }) {
       <button
         onClick={() => setOpen((o) => !o)}
         aria-label="Toggle emblem toolbar"
-        className="mb-6 mr-4 flex h-11 w-11 items-center justify-center rounded-full border border-white/20 bg-arcanta-card shadow-lg backdrop-blur transition active:scale-95"
+        className="mr-4 flex h-11 w-11 items-center justify-center rounded-full border border-white/20 bg-arcanta-card shadow-lg backdrop-blur transition active:scale-95"
+        style={{ marginBottom: 'max(28px, env(safe-area-inset-bottom, 28px))' }}
       >
         <svg
           width="18"

@@ -2,8 +2,6 @@ import { useState } from 'react';
 import ImageWithFallback from './ImageWithFallback';
 import DevEmblemToolbar from './DevEmblemToolbar';
 
-const isDev = import.meta.env.DEV;
-
 const defaultEmblem = {
   width: 100,
   opacity: 85,
@@ -15,14 +13,12 @@ const defaultEmblem = {
 function Hero() {
   const [emblem, setEmblem] = useState(defaultEmblem);
 
-  const emblemStyle = isDev
-    ? {
-        width: `${emblem.width}px`,
-        opacity: emblem.opacity / 100,
-        transform: `translateX(${emblem.translateX}px) translateY(${emblem.translateY}px)`,
-        height: 'auto',
-      }
-    : undefined;
+  const emblemStyle = {
+    width: `${emblem.width}px`,
+    opacity: emblem.opacity / 100,
+    transform: `translateX(${emblem.translateX}px) translateY(${emblem.translateY}px)`,
+    height: 'auto',
+  };
 
   return (
     <>
@@ -48,13 +44,13 @@ function Hero() {
               {/* Mobile-only emblem: right of the heading, hidden sm+ */}
               <div
                 className="shrink-0 sm:hidden"
-                style={isDev ? { alignSelf: emblem.alignSelf } : undefined}
+                style={{ alignSelf: emblem.alignSelf }}
               >
                 <ImageWithFallback
                   src="/assets/arcanta-hero-emblem-primary.png"
                   alt="Arcanta hero emblem"
                   fallbackLabel="Arcanta"
-                  className={isDev ? 'object-contain' : 'h-auto w-[100px] object-contain opacity-85'}
+                  className="object-contain"
                   style={emblemStyle}
                 />
               </div>
@@ -93,7 +89,7 @@ function Hero() {
         </div>
       </section>
 
-      {isDev && <DevEmblemToolbar values={emblem} onChange={setEmblem} />}
+      <DevEmblemToolbar values={emblem} onChange={setEmblem} />
     </>
   );
 }
