@@ -29,7 +29,7 @@ function Hero() {
           <div>
             <p className="eyebrow">AI APP DEVELOPMENT</p>
 
-            {/* Heading row — emblem sits to the right of the heading on iPhone only */}
+            {/* Heading row — emblem sits to the right of the heading */}
             <div className="mt-4 flex items-start gap-4 sm:mt-5">
               <h1 className="flex-1 text-[2.15rem] font-semibold leading-[1.1] text-white sm:text-5xl md:text-6xl">
                 We Build AI Apps
@@ -41,9 +41,9 @@ function Hero() {
                 </span>
               </h1>
 
-              {/* Mobile-only emblem: right of the heading, hidden sm+ */}
+              {/* Emblem: right of the heading at all breakpoints */}
               <div
-                className="shrink-0 sm:hidden"
+                className="shrink-0"
                 style={{ alignSelf: emblem.alignSelf }}
               >
                 <ImageWithFallback
@@ -76,8 +76,8 @@ function Hero() {
             </div>
           </div>
 
-          {/* Hero emblem — desktop only (lg+) */}
-          <div className="relative mx-auto hidden w-full overflow-visible lg:block">
+          {/* Hero emblem — desktop only (lg+), hidden now that the iPhone emblem is always right of the heading */}
+          <div className="relative mx-auto hidden w-full overflow-visible">
             <ImageWithFallback
               src="/assets/arcanta-hero-emblem-primary.png"
               alt="Arcanta hero emblem"
