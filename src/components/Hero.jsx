@@ -47,11 +47,11 @@ function Hero() {
                 style={{ alignSelf: emblem.alignSelf }}
               >
                 <ImageWithFallback
-                  src="/assets/Iphone-arcanta-hero-emblem-primary.jpg"
+                  src="/assets/Iphone-arcanta-hero-emblem-primary.png"
                   alt="Arcanta hero emblem"
                   fallbackLabel="Arcanta"
                   className="object-contain"
-                  style={{ ...emblemStyle, mixBlendMode: 'multiply' }}
+                  style={emblemStyle}
                 />
               </div>
             </div>
