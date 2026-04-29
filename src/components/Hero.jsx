@@ -79,7 +79,7 @@ function Hero() {
           {/* Hero emblem — desktop only (lg+) */}
           <div className="relative mx-auto hidden w-full overflow-visible lg:block">
             <ImageWithFallback
-              src="/assets/arcanta-hero-emblem-primary.png"
+              src="/assets/Iphone-arcanta-hero-emblem-primary.png"
               alt="Arcanta hero emblem"
               fallbackLabel="Arcanta Hero Emblem"
               className="relative z-10 mx-auto h-auto w-full object-contain md:-translate-x-[81px] md:translate-y-[77px] md:scale-[2.35]"
