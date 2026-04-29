@@ -2,7 +2,7 @@ function TrustStrip() {
   const logos = ['Nova', 'Elevate', 'Cortex', 'Pivot', 'Latitude'];
 
   return (
-    <section className="border-y border-white/10 py-7 sm:py-8">
+    <section className="hidden border-y border-white/10 py-7 sm:block sm:py-8">
       <div className="section-shell">
         <p className="text-center text-xs font-semibold uppercase tracking-[0.2em] text-white/55">
           TRUSTED BY INNOVATORS
