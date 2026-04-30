@@ -11,19 +11,16 @@ function Hero() {
 
           <div className="mt-4 sm:mt-5">
             <h1 className="text-center text-[2.15rem] font-semibold leading-[1.1] text-white sm:text-5xl md:text-6xl lg:text-left">
-              We Build AI Apps
-              <br />
-              That Solve Real
+              Intelligent AI Applications.
               <br />
               <span className="bg-gradient-to-r from-arcanta-blue to-arcanta-gold bg-clip-text text-transparent">
-                Problems.
+                Built to Simplify Complex Workflows.
               </span>
             </h1>
           </div>
 
           <p className="mt-5 max-w-xl text-center text-base leading-relaxed text-white/72 sm:mt-6 sm:text-lg lg:text-left">
-            Arcanta is an AI app development company crafting intelligent, intuitive,
-            and impactful applications for the future.
+            Arcanta develops AI applications engineered for both individual users and enterprise-scale systems—delivering intuitive design, reliable performance, and measurable impact.
           </p>
 
           <div className="mt-7 flex justify-center gap-3 sm:mt-8 sm:gap-4 lg:justify-start lg:flex-wrap">
