@@ -42,7 +42,7 @@ function ProcessSection() {
             <br />
             Intelligent Assembly.
             <br />
-            Flawless Delivery
+            Flawless Delivery.
           </h2>
           <p className="mt-4 text-sm leading-7 text-white/75 sm:mt-5 sm:text-base">
             We integrate human-centered design with practical AI engineering to deliver systems that are usable, scalable, and performance-driven across real-world applications.
