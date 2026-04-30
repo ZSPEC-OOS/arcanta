@@ -38,15 +38,14 @@ function ProcessSection() {
         <div className="max-w-md text-center lg:text-left">
           <p className="eyebrow">OUR APPROACH</p>
           <h2 className="mt-3 text-3xl font-semibold leading-tight text-white sm:mt-4 sm:text-4xl">
-            Human insight.
+            Human-Centered Design.
             <br />
-            AI intelligence.
+            Intelligent Assembly.
             <br />
-            Real impact.
+            Flawless Delivery
           </h2>
           <p className="mt-4 text-sm leading-7 text-white/75 sm:mt-5 sm:text-base">
-            We combine human-centered design with practical AI engineering to build apps
-            that are useful, scalable, and measurable.
+            We integrate human-centered design with practical AI engineering to deliver systems that are usable, scalable, and performance-driven across real-world applications.
           </p>
           <div className="flex justify-center lg:justify-start">
             <button className="mt-6 rounded-full border border-arcanta-gold px-6 py-3 text-sm font-semibold text-arcanta-gold transition hover:bg-arcanta-gold/10 active:scale-95 sm:mt-8">
