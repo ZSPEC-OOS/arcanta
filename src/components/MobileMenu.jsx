@@ -1,13 +1,21 @@
 import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import ImageWithFallback from './ImageWithFallback';
 
 const navItems = ['Home', 'About', 'Apps', 'Process', 'Careers', 'Contact'];
 
 function MobileMenu({ isOpen, onClose }) {
+  const navigate = useNavigate();
+
   useEffect(() => {
     document.body.style.overflow = isOpen ? 'hidden' : '';
     return () => { document.body.style.overflow = ''; };
   }, [isOpen]);
+
+  function handleLogin() {
+    onClose();
+    navigate('/login');
+  }
 
   return (
     <div
@@ -62,7 +70,13 @@ function MobileMenu({ isOpen, onClose }) {
         </nav>
 
         {/* CTA */}
-        <div className="px-6 py-6 border-t border-white/8" style={{ paddingBottom: 'max(24px, env(safe-area-inset-bottom))' }}>
+        <div className="px-6 py-6 border-t border-white/8 flex flex-col gap-3" style={{ paddingBottom: 'max(24px, env(safe-area-inset-bottom))' }}>
+          <button
+            className="w-full rounded-full border border-white/20 py-3 text-sm font-semibold text-white/70 transition hover:bg-white/5 hover:text-white active:scale-95"
+            onClick={handleLogin}
+          >
+            Log In
+          </button>
           <button
             className="w-full rounded-full border border-arcanta-gold/65 py-3.5 text-sm font-semibold text-arcanta-gold transition hover:bg-arcanta-gold/10 active:scale-95"
             onClick={onClose}
