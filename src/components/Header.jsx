@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import ImageWithFallback from './ImageWithFallback';
 import MobileMenu from './MobileMenu';
 
@@ -6,6 +7,7 @@ const navItems = ['Home', 'About', 'Apps', 'Process', 'Careers', 'Contact'];
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <>
@@ -34,10 +36,18 @@ function Header() {
             ))}
           </nav>
 
-          {/* Desktop CTA */}
-          <button className="hidden md:block rounded-full border border-arcanta-gold/65 px-5 py-2 text-sm font-medium text-arcanta-gold transition hover:bg-arcanta-gold/10 shrink-0">
-            Let&apos;s Build
-          </button>
+          {/* Desktop actions */}
+          <div className="hidden md:flex items-center gap-3 shrink-0">
+            <button
+              onClick={() => navigate('/login')}
+              className="rounded-full border border-white/20 px-5 py-2 text-sm font-medium text-white/70 transition hover:bg-white/5 hover:text-white"
+            >
+              Log In
+            </button>
+            <button className="rounded-full border border-arcanta-gold/65 px-5 py-2 text-sm font-medium text-arcanta-gold transition hover:bg-arcanta-gold/10">
+              Let&apos;s Build
+            </button>
+          </div>
 
           {/* Mobile hamburger */}
           <button
