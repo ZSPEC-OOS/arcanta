@@ -77,12 +77,6 @@ function MobileMenu({ isOpen, onClose }) {
           >
             Log In
           </button>
-          <button
-            className="w-full rounded-full border border-arcanta-gold/65 py-3.5 text-sm font-semibold text-arcanta-gold transition hover:bg-arcanta-gold/10 active:scale-95"
-            onClick={onClose}
-          >
-            Let&apos;s Build
-          </button>
         </div>
       </div>
     </div>
