@@ -44,9 +44,6 @@ function Header() {
             >
               Log In
             </button>
-            <button className="rounded-full border border-arcanta-gold/65 px-5 py-2 text-sm font-medium text-arcanta-gold transition hover:bg-arcanta-gold/10">
-              Let&apos;s Build
-            </button>
           </div>
 
           {/* Mobile hamburger */}
